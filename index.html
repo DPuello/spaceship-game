@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="AtaqueDelPlanetaTierra" content="width=device-width, initial-scale=1.0">
+    <title>Ataque del Planeta Tierra</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <style>
+
+        @font-face {
+            font-family: 'VT323';
+            src: url('./font/VT323.ttf');
+        }
+
+        *{
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    
+    <div id="mainDiv" style="position: relative;">
+        <p style="position: absolute; z-index: 10; color: white; left: 2%; top: 2%; font-family: VT323; font-size: 200%;">
+            <span>Score:</span> <span id="scoreElement">0</span>
+        </p>
+
+        <canvas>
+        </canvas>
+    </div>
+    
+    
+</body>
+<script src="./scripts/variables.js"></script>
+<script src="./scripts/player.js"></script>
+<script src="./scripts/enemies.js"></script>
+<script src="./scripts/powerUps.js"></script>
+<script src="./script.js"></script>
+
+</html>
